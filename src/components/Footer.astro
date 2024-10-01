@@ -1,0 +1,28 @@
+---
+const platform = "github";
+const username = "withastro";
+const platform2 ="instagram";
+const username2 = "pavanscodehub";
+const platform3 ="Youtube";
+const username3 = "marikantipavankumar3476";
+import Social from './Social.astro';
+
+---
+
+<style>
+    footer{
+        display:flex;
+        gap:1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+<footer>
+  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+  <p>To learn collaborately follow me on <a href={`https://www.${platform2}.com/${username2}/`}>{platform2}</a></p>
+
+  <p>Want to learn the coding? Then subscribe to the Pavan'sCODEHUB on<a href={` https://www.youtube.com/@marikantipavankumar3476/`}>Youtube</a></p>
+</footer>
